@@ -1,0 +1,102 @@
+/* NO WAY OUT title */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0a0a12;
+  color: #f5eee6;
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+
+/* Shared layout for the home and video pages */
+.home-page, .video-page {
+  min-height: 100vh;
+  padding: 30px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-page {
+  display: flex;
+  background: radial-gradient(circle at center, #421629, #0a0a12 75%);
+}
+
+h1, h2, button {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(70px, 13vw, 160px);
+  line-height: 1;
+  margin: 10px 0;
+  text-shadow: 5px 5px #a52b3b;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0 0 20px;
+}
+
+button {
+  padding: 12px 30px;
+  margin: 8px;
+  border: 2px solid #f5eee6;
+  border-radius: 4px;
+  background: #a52b3b;
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d04154;
+  transform: scale(1.04);
+}
+
+.video-page {
+  background: #0a0a12;
+}
+
+.video-box {
+  position: relative;
+  width: min(100%, 1000px);
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 2px solid #333;
+}
+
+.video-box video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-choices {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.68);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.video-choices p {
+  font-weight: 700;
+  font-size: clamp(17px, 3vw, 26px);
+  margin: 0 0 15px;
+}
+
+.video-choices button {
+  min-width: 190px;
+}
+
+.next-btn {
+  margin-top: 20px;
+}
