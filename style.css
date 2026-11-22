@@ -1,4 +1,4 @@
-/* NO WAY OUT title */
+/*NO WAY OUT title*/
 * {
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
   font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* Shared layout for the home and video pages */
+/*layout for the home and video pages*/
 .home-page, .video-page {
   min-height: 100vh;
   padding: 30px 20px;
@@ -22,7 +22,7 @@ body {
 
 .home-page {
   display: flex;
-  background: radial-gradient(circle at center, #421629, #0a0a12 75%);
+  background: radial-gradient(circle at center, #736df2, #0a0a12 75%);
 }
 
 h1, h2, button {
@@ -34,7 +34,7 @@ h1 {
   font-size: clamp(70px, 13vw, 160px);
   line-height: 1;
   margin: 10px 0;
-  text-shadow: 5px 5px #a52b3b;
+  text-shadow: 5px 5px #7a2ba5;
 }
 
 h2 {
@@ -99,4 +99,14 @@ button:hover {
 
 .next-btn {
   margin-top: 20px;
+}
+
+.ending {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.ending p {
+  font-size: 20px;
 }
